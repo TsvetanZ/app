@@ -1,3 +1,5 @@
 <app-header></app-header>
-<app-main></app-main>
+<div [ngClass]="{ 'my-class': showMyClass}">HELLO</div>
+<button (click)="toggleMyClass()">Toggle class</button>
+<router-outlet></router-outlet> <!-- това за да работи ни трябва AppRoutingModule(това е е app-routing.module.ts) да е app.module.ts-->
 <app-footer></app-footer>
